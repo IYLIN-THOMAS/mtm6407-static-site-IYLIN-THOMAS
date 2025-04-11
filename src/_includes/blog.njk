@@ -14,21 +14,46 @@
   </style>
 </head>
 <body>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-    <a href="/projects/">Projects</a>
-    <a href="/contact/">Contact</a>
+
+  <!-- Navigation bar with Bootstrap classes -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">My Site</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/blog/">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects/">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact/">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <main>
+  <main class="container mt-5">
     <h1>{{ title }}</h1>
     <p class="post-meta">
       {% if date %}🕒 Posted on {{ date | date("MMMM d, yyyy") }}{% endif %}
       {% if tags %}<br/>🏷️ Tags: {{ tags | join(", ") }}{% endif %}
     </p>
-    {{ content | safe }}
+    <div class="content">
+      {{ content | safe }}
+    </div>
   </main>
+
+  <footer class="bg-light text-center py-3 mt-5">
+    <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
