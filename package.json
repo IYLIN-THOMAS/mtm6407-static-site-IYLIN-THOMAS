@@ -1,0 +1,24 @@
+{
+  "name": "mtm6407-static-site-iylin-thomas",
+  "version": "1.0.0",
+  "description": "Name: Iylin Thomas \r Student Number: 041111689 \r Static Site Generator: Eleventy",
+  "main": "index.js",
+  "scripts": {
+  "start": "eleventy --serve",
+  "build": "eleventy"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IYLIN-THOMAS/mtm6407-static-site-IYLIN-THOMAS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IYLIN-THOMAS/mtm6407-static-site-IYLIN-THOMAS/issues"
+  },
+  "homepage": "https://github.com/IYLIN-THOMAS/mtm6407-static-site-IYLIN-THOMAS#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
